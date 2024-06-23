@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="type calculator.css">
+    <title>Pokemon Type Calculator</title>
+</head>
+<body>
+    <h1>Pokemon Type Calculator</h1>
+
+    <div class="dropdown">
+        <img a src="images/normal.png" alt="selected type 1" class="dropbtn" id="type1">
+        <div class="dropdown-content">
+          <img src="images/fire.png" alt="fire" onclick="select('images/fire.png','fire','type1')">
+          <img src="images/water.png" alt="water" onclick="select('images/water.png','water','type1')">
+          <img src="images/grass.png" alt="grass" onclick="select('images/grass.png','grass','type1')">
+          <img src="images/normal.png" alt="normal" onclick="select('images/normal.png','normal','type1')">
+          <img src="images/bug.png" alt="bug" onclick="select('images/bug.png','bug','type1')">
+          <img src="images/poison.png" alt="poison" onclick="select('images/poison.png','poison','type1')">
+          <img src="images/ground.png" alt="ground" onclick="select('images/ground.png','ground','type1')">
+          <img src="images/rock.png" alt="rock" onclick="select('images/rock.png','rock','type1')">
+          <img src="images/electric.png" alt="electric" onclick="select('images/electric.png','electric','type1')">
+          <img src="images/dragon.png" alt="dragon"  onclick="select('images/dragon.png','dragon','type1')">
+          <img src="images/ice.png" alt="ice" onclick="select('images/ice.png','ice','type1')">
+          <img src="images/ghost.png" alt="ghost" onclick="select('images/ghost.png','ghost','type1')">
+          <img src="images/fairy.png" alt="fairy" onclick="select('images/fairy.png','fairy','type1')">
+          <img src="images/steel.png" alt="steel" onclick="select('images/steel.png','steel','type1')">
+          <img src="images/dark.png" alt="dark" onclick="select('images/dark.png','dark','type1')">
+          <img src="images/psychic.png" alt="psychic" onclick="select('images/psychic.png','psychic','type1')">
+          <img src="images/fighting.png" alt="fighting" onclick="select('images/fighting.png','fighting','type1')">
+          <img src="images/flying.png" alt="flying" onclick="select('images/flying.png','flying','type1')">
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <img a src="images/default.png" alt="selected type 2" class="dropbtn unselected" id="type2">
+        <div class="dropdown-content">
+          <img src="images/fire.png" alt="fire" onclick="select('images/fire.png','fire','type2')">
+          <img src="images/water.png" alt="water" onclick="select('images/water.png','water','type2')">
+          <img src="images/grass.png" alt="grass" onclick="select('images/grass.png','grass','type2')">
+          <img src="images/normal.png" alt="normal" onclick="select('images/normal.png','normal','type2')">
+          <img src="images/bug.png" alt="bug" onclick="select('images/bug.png','bug','type2')">
+          <img src="images/poison.png" alt="poison" onclick="select('images/poison.png','poison','type2')">
+          <img src="images/ground.png" alt="ground" onclick="select('images/ground.png','ground','type2')">
+          <img src="images/rock.png" alt="rock" onclick="select('images/rock.png','rock','type2')">
+          <img src="images/electric.png" alt="electric" onclick="select('images/electric.png','electric','type2')">
+          <img src="images/dragon.png" alt="dragon" onclick="select('images/dragon.png','dragon','type2')">
+          <img src="images/ice.png" alt="ice" onclick="select('images/ice.png','ice','type2')">
+          <img src="images/ghost.png" alt="ghost" onclick="select('images/ghost.png','ghost','type2')">
+          <img src="images/fairy.png" alt="fairy" onclick="select('images/fairy.png','fairy','type2')">
+          <img src="images/steel.png" alt="steel" onclick="select('images/steel.png','steel','type2')">
+          <img src="images/dark.png" alt="dark" onclick="select('images/dark.png','dark','type2')">
+          <img src="images/psychic.png" alt="psychic" onclick="select('images/psychic.png','psychic','type2')">
+          <img src="images/fighting.png" alt="fighting" onclick="select('images/fighting.png','fighting','type2')">
+          <img src="images/flying.png" alt="flying" onclick="select('images/flying.png','flying','type2')">
+          <img src="images/default.png" alt="default" onclick="select('images/default.png','unselected','type2')">
+        </div>
+      </div>
+      <br>
+      <br>
+    <button class="calc" onclick="calculate()">Calculate</button>
+    <p>for a full list of the type chart <a href="https://bulbapedia.bulbagarden.net/wiki/Type/Type_chart">click here</a></p>
+    <div id="results">
+      <span>
+    <h1>Adventages:</h1>
+    <div id="adventages"></div>
+    <h1 id="no_adventages"></h1>
+  </span>
+    <br class="resultBreaks">
+    <span>
+    <h1>Weaknesses:</h1>
+    <div id="weaknesses"></div>
+    <h1 id="no_weaknesses"></h1>
+  </span>
+    <br class="resultBreaks">
+    <span>
+    <h1>Resistances:</h1>
+    <div id="resistances"></div>
+    <h1 id="no_resistances"></h1>
+  </span>
+    <br class="resultBreaks">
+    <span>
+    <h1>Immunities:</h1>
+    <div id="immunities"></div>
+    <h1 id="no_immunities"></h1>
+  </span>
+    </div>
+    <script type="text/javascript" src="type calculator.js"></script>
+</body>
+</html>
